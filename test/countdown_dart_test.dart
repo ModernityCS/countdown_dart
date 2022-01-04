@@ -3,14 +3,14 @@ import 'package:test/test.dart';
 
 void main() {
   group('A group of tests', () {
-    Countdown countDown = Countdown();
+    Countdown countDown = Countdown(endDate: DateTime(2021));
 
     setUp(() {
       // Additional setup goes here.
     });
 
     test('First Test', () {
-      expect(countDown.yearsLeft(DateTime(2029)), 7);
+      // expect(countDown.(), 7);
     });
   });
 }

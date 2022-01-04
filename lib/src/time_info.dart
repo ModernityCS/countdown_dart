@@ -1,3 +1,5 @@
+import 'dart:typed_data';
+
 class TimeInfo {
   // This implements the Gregorian calendar leap year rules wherein a year is considered to
   // be a leap year if it is divisible by 4, excepting years divisible by 100, but including years divisible by 400.
@@ -7,7 +9,8 @@ class TimeInfo {
       (year % 4 == 0) && ((year % 100 != 0) || (year % 400 == 0));
 
   /// The 12 Months of the Year in days
-  List<int> monthsLength = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+  Uint8List monthsLength =
+      Uint8List.fromList([31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]);
 
   /// The 12 Months of the Year name
   List<String> monthsName = [
@@ -41,7 +44,7 @@ class TimeInfo {
     /// Initialize an empty list that will contain the monthsLength between the two dates
     List<int> monthsLengthBetweenDates = [];
 
-    /// Check if the @startDate is null+
+    /// Check if the  [@startDate] is null
     startDate = startDate ?? DateTime.now();
 
     /// Get the [@startDate month] and the [@endDate month]
