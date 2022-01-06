@@ -17,7 +17,7 @@ void periodicProcess(Countdown countdown) {
 }
 
 void main() {
-  /// DisplaySettings
+  /// DisplaySettings:: Only seconds are being computed. 
   DisplaySettings displaySettings = DisplaySettings(
       years: false,
       months: false,

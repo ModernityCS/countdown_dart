@@ -47,7 +47,7 @@ class Countdown {
 
     // Return updated data
     // Usage of list:
-    // * there are not tuples in DART
+    // * there are no tuples in DART
     // * Creating an object that stores the new data might be a solution, but lists do the work too.
     return [yearsLeft, days, seconds];
   }
@@ -68,7 +68,7 @@ class Countdown {
 
     // Return updated data
     // Usage of list:
-    // * there are not tuples in DART
+    // * there are no tuples in DART
     // * Creating an object that stores the new data might be a solution, but lists do the work too.
     return [weeks, days, seconds];
   }
