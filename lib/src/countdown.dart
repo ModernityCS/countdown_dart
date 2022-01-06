@@ -16,16 +16,14 @@ class Countdown {
   /// Private/Local object call to compute the countdown
   final TimeInfo _timeInfo = TimeInfo();
 
-  set results(CountdownResults results) {}
-
   /// Compute years based on the current days left
   ///
-  /// The logic behind is simple: if there are > 365 or 366 increase years left and subtract these days from all the days left until the endDate
+  /// The logic behind this is simple: if there are > 365 or 366 increase years left and subtract these days from all the days left until the endDate
   List<int> _computeYears(DateTime end, int days, int seconds) {
     /// From @StartDate to @EndDate check each year to see if it's a leap year
     /// For-loop exec
 
-    /// Check how many years between startDate and EndDate
+    /// Check how many years there are between the startDate and EndDate
     int diffYears = end.year - startDate!.year;
 
     /// Self-explanatory

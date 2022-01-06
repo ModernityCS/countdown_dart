@@ -1,4 +1,5 @@
-/// Object that stores the countdown values
+///
+/// CountdownResults - Object to store the value of the current countdown
 class CountdownResults {
   int years = 0;
 
